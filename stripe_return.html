@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta http-equiv="refresh" content="0; url=realizedvision://stripe/onboarding_complete?id=">
+            <script>
+              // Dynamically get the ID from the query parameter
+              const urlParams = new URLSearchParams(window.location.search);
+              const id = urlParams.get('id');
+              if (id) {
+                window.location.href = 'realizedvision://stripe/onboarding_complete?id=' + id;
+              } else {
+                // Handle the case where the ID is missing (e.g., redirect to a fallback page)
+                window.location.href = '/error.html'; // Create an error.html file
+              }
+            </script>
+        </head>
+        <body>
+            <p>Redirecting...</p>
+        </body>
+        </html>
