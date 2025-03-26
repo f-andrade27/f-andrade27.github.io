@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta http-equiv="refresh" content="0; url=realizedvision://stripe/refresh?id=">
+            <script>
+              // Dynamically get the ID from the query parameter
+              const urlParams = new URLSearchParams(window.location.search);
+              const id = urlParams.get('id');
+              if (id) {
+                window.location.href = 'realizedvision://stripe/refresh?id=' + id;
+              } else {
+                // Handle the case where the ID is missing
+                window.location.href = '/error.html';
+              }
+            </script>
+        </head>
+        <body>
+            <p>Redirecting...</p>
+        </body>
+        </html>
