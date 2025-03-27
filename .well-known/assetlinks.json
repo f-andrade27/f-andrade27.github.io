@@ -1,1 +1,9 @@
-
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.csulb.realized_vision",
+    "sha256_cert_fingerprints":
+    ["95:5F:01:01:6E:8E:63:69:34:17:7F:23:21:AB:74:D4:8D:73:85:84:D9:D8:CC:D2:99:F0:E7:B6:F0:F3:D8:D9"]
+  }
+}]
